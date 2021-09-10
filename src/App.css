@@ -1,16 +1,52 @@
 .App {
-  text-align: center;
+  margin-top: 0;
+  background-color:rgb(250, 248, 248) ;
+  height: 100%;
+  width: 100%;
+ 
+}
+.app__container {
+	margin-top: 10px;
+	
+  align-items: center;
+	
+	border: 1px solid #000;
+}
+.app__input {
+	margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+white-curved-bg{
+  /* border: 2px solid rgb(211, 205, 205);
+   background-color: #fff;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px; */
+  border: 2px solid rgb(211, 205, 205);
+  border-radius: 5px;
+  background-color: #fff;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+.img-bg{
+  padding-left: 40px!important;
+  margin : 0!important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: auto;
+  background-color : rgb(90, 72, 49);
+  color: white;
 }
 
 .App-header {
@@ -28,6 +64,112 @@
   color: #61dafb;
 }
 
+.body{
+  padding-left : 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.line {
+  width: flex;
+  border: 1px solid #928e8e;
+  margin: 3px;
+  display:inline-block;
+}
+.whatsapptxtdiv{
+  display: 'flex';
+  float:"left";
+  width: 100%;
+  
+}
+.whatsapptxt {
+  font-size: 13px;
+  font-family: Arial;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+
+.whatsapptxt:after {
+  display: inline-block;
+  content: "";
+  height: 2px;
+ 
+  background:  rgb(211, 205, 205);
+  position: absolute;
+  width:100%;
+  top: 50%;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+.borderd-div{
+  border: 2px solid rgb(211, 205, 205);
+  border-radius: 5px;
+  background-color: #fff;
+}
+.borderd-div.record{
+  padding-top: 20px;
+  
+  width:70%;
+  height:70%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.record.body{
+  background-color: rgb(180, 42, 42);
+  height: 700px;
+  background-size: cover;
+  align-content: center;
+  padding-top: 70px;
+  
+}
+.cng-div{
+  border-radius: 5px;
+  display: flex;
+  width: 100%; /*Optional*/
+  margin-top: 25px;
+  background-color: #fff;
+  border: 2px solid rgb(211, 205, 205);
+  
+}
+.center {
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 2%;
+  width: 50%;
+  text-align: center;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+    
+}
+.custom-list li {
+    position: relative;
+    padding-left: 20px;
+   
+}
+.custom-list li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-image: url('img/tick.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+}
+.loanacpt-div{
+  background-color: lightpink;
+  
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +177,5 @@
   to {
     transform: rotate(360deg);
   }
+  
 }
